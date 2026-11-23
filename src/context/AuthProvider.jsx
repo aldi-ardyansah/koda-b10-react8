@@ -1,7 +1,7 @@
-
 import { useEffect, useReducer } from "react";
 import { AuthContext } from "./AuthContext";
-import { authReducer, initialState } from "./AuthReducer";
+import { authReducer} from "./useAuth";
+import { initialState } from "./AuthReducer";
 
 function getInitialState() {
   const savedState = localStorage.getItem("auth");
