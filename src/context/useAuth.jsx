@@ -5,6 +5,11 @@ export function useAuth() {
   return useContext(AuthContext);
 }
 
+export const initialState = {
+  user: null,
+  accounts: []
+};
+
 export function authReducer(state, action) {
   switch (action.type) {
     case "REGISTER":
